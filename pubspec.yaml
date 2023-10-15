@@ -1,0 +1,51 @@
+name: todo_flutter
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.3 <4.0.0'
+
+dependencies:
+  dartz: ^0.10.1
+  dio: ^5.3.3
+  equatable: ^2.0.5
+  fluro: ^2.0.5
+  flutter:
+    sdk: flutter
+  flutter_secure_storage: ^9.0.0
+  flutter_svg: ^2.0.7
+  fluttertoast: ^8.2.2
+  get_it: ^7.6.4
+  iconsax: ^0.0.8
+  intl: ^0.18.1
+  lottie: ^2.6.0
+  property_change_notifier: ^0.3.0
+  provider: ^6.0.5
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/core/res/images/
+  fonts:
+    - family: GroteskBold
+      fonts:
+        - asset: lib/core/res/fonts/grotesk_bold.ttf
+    - family: GroteskReg
+      fonts:
+        - asset: lib/core/res/fonts/grotesk_reg.ttf
+    - family: GroteskSemibold
+      fonts:
+        - asset: lib/core/res/fonts/grotesk_semibold.ttf
+    - family: GroteskMedium
+      fonts:
+        - asset: lib/core/res/fonts/grotesk_medium.ttf
+    - family: UbuntuMedium
+      fonts:
+        - asset: lib/core/res/fonts/Ubuntu-Medium.ttf
