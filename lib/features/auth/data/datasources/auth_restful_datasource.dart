@@ -23,8 +23,9 @@ class AuthRestfulDataSource implements AuthDataSourceContract {
       UserCreationRequestParams loginWithOtpParams) async {
     final Map<String, dynamic> data = {};
     data["email"] = loginWithOtpParams.email;
-    data["user_name"] = loginWithOtpParams.userName;
+    data["name"] = loginWithOtpParams.userName;
     data["password"] = loginWithOtpParams.password;
+    data["role"] = "MANAGER";
 
     Either<Failure, NetworkResponse> result = await networkManagerContract
         .request(UrlConstants.CREATE_USER, RequestMethod.POST, data: data);
@@ -44,8 +45,7 @@ class AuthRestfulDataSource implements AuthDataSourceContract {
   Future<Either<Failure, LoginEntity>> login(
       LoginParams validateOtpParams) async {
     final Map<String, dynamic> data = {};
-    data["grant_type"] = validateOtpParams.grantType;
-    data["username"] = validateOtpParams.username;
+    data["email"] = validateOtpParams.username;
     data["password"] = validateOtpParams.password;
     Either<Failure, NetworkResponse> result = await networkManagerContract
         .request(UrlConstants.LOGIN, RequestMethod.POST, data: data);

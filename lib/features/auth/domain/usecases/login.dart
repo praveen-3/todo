@@ -17,7 +17,6 @@ class Login implements UseCase<LoginEntity, LoginParams> {
 }
 
 class LoginParams extends Equatable {
-  final String grantType = "password";
   final String username;
   final String password;
 
@@ -25,7 +24,6 @@ class LoginParams extends Equatable {
 
   @override
   List<Object?> get props => [
-        grantType,
         username,
         password,
       ];

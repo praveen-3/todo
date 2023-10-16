@@ -80,7 +80,7 @@ class _LoginView extends ParentPropertyNotifierView<LoginView, LoginViewModel,
           Padding(
             padding: EdgeInsets.symmetric(horizontal: Dimens.dimen_40),
             child: DSEditText(
-              LoginStrings.USERNAME,
+              LoginStrings.EMAIL,
               false,
               viewModel.userNameTextController,
               "invalid username",

@@ -77,7 +77,7 @@ class _SignUpView extends ParentPropertyNotifierView<SignUpView,
           Padding(
             padding: EdgeInsets.symmetric(horizontal: Dimens.dimen_40),
             child: DSEditText(
-              LoginStrings.USERNAME,
+              LoginStrings.NAME,
               false,
               viewModel.userNameTextController,
               "invalid username",

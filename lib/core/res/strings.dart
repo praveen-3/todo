@@ -30,7 +30,7 @@ class LoginStrings {
   static const String CLIENT_ID = "d0fb7ca8d3b34009adca84cd71c9b9fc";
   static const String CLIENT_SECRET = "4e61dd8d6b944dcaaa1c71e57f9b65b7";
   static const String EMAIL = "Email";
-  static const String USERNAME = "User name";
+  static const String NAME = "Name";
   static const String PASSWORD = "Password";
   static const String LOGIN = "Login";
   static const String REGISTER = "Register";
